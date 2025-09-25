@@ -1,4 +1,22 @@
 #navigation {
     display: flex;
     flex-direction: row;
+    height: fit-content;
+    margin: 2rem 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navigation-items {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 1rem;
+    /* justify-content: center;
+    align-items: center;
+    isolation: isolate; */
+    background: linear-gradient(180deg, rgba(0, 20, 39, 0.88) 0%, rgba(0, 8, 16, 0.88) 100%);
+    box-shadow: 0px 32px 48px -40px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(24px);
+    border-radius: 12px;
 }
