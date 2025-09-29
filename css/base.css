@@ -1,0 +1,26 @@
+h1 {
+    width: fit-content;
+    height: fit-content;
+
+    /* font-family: 'Inter';
+    font-style: normal; */
+    font-weight: 600;
+    font-size: 128px;
+    line-height: 120px;
+    letter-spacing: -10px;
+    font-style: normal;
+
+    hanging-punctuation: first last;
+    -webkit-hanging-punctuation: first last;
+    -moz-hanging-punctuation: first last;
+    -ms-hanging-punctuation: first last;
+    -o-hanging-punctuation: first last;
+
+    color: #FFFFFF;
+}
+
+h2 {}
+
+p {}
+
+button {}
