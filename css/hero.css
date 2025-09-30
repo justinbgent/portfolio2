@@ -2,36 +2,16 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: rgba(0, 8, 16, 1);
     z-index: 100;
 }
 
-.side-background {
-    position: absolute;
-    width: 10vw;
-    height: 100%;
-    background-color: rgba(0, 8, 16, 1);
-    z-index: 400;
-}
-
-#left-side-background {
-    left: 0;
-    justify-content: flex-start;
-}
-
-#right-side-background {
-    right: 0;
-    justify-content: flex-end;
-}
-
 #hero-content {
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 1000px;
     overflow: hidden;
 }
@@ -47,4 +27,16 @@
     mix-blend-mode: color-dodge;
     object-fit: cover;
     object-position: center center;
+}
+
+#hero-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 8rem);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    z-index: 100;
 }

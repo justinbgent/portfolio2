@@ -17,7 +17,7 @@ will have to play with z indexes */
 #logo-img {
     grid-area: 1 / 1;
     width: auto;
-    height: auto;
+    height: 72px;
     z-index: 2;
     background-color: transparent;
 }
