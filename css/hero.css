@@ -33,10 +33,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: calc(100% - 8rem);
+    width: calc(100% - 128px);
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10rem;
+    margin-top: 160px;
     z-index: 100;
 }
