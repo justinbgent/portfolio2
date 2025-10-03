@@ -27,6 +27,37 @@
     mix-blend-mode: color-dodge;
     object-fit: cover;
     object-position: center center;
+    z-index: 100;
+}
+
+/* #hero-fg-container {
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+} */
+
+#union-img {
+    position: absolute;
+    top: 160px;
+    left: 20%;
+    width: 624px;
+    height: 789px;
+    object-fit: cover;
+    z-index: 200;
+}
+
+/* Try to stick to vw/vh and rem for units */
+#portrait-img {
+    position: absolute;
+    bottom: 0;
+    right: -50%;
+    width: 58.4375rem;
+    height: 58.125rem;
+    object-fit: cover;
+    z-index: 300;
 }
 
 #hero-text {
