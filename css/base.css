@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../assets/fontawesome-free/webfonts/fa-regular-400.woff2') format('woff2');
+    font-display: swap;
+    font-style: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -29,13 +36,14 @@ h1 {
     width: fit-content;
     height: fit-content;
 
-    /* font-family: 'Inter';
-    font-style: normal; */
+    font-family: 'FontAwesome';
     font-weight: 600;
     font-size: 8rem;
     line-height: 7.5rem;
     letter-spacing: -0.625rem;
     font-style: normal;
+    text-transform: none;
+
 
     hanging-punctuation: first last;
     -webkit-hanging-punctuation: first last;
@@ -43,13 +51,27 @@ h1 {
     -ms-hanging-punctuation: first last;
     -o-hanging-punctuation: first last;
 
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 1);
 
     margin: 0;
 }
 
-h2 {}
+h2 {
+    font-family: 'FontAwesome';
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
 
-p {}
+p {
+    font-family: 'FontAwesome';
+    color: rgba(99, 108, 118, 1);
+    font-size: 1rem;
+    margin: 0;
+}
 
-button {}
+button {
+    font-family: 'FontAwesome';
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    margin: 0;
+}
