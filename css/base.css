@@ -11,7 +11,7 @@ body {
     background-color: rgba(0, 8, 16, 1);
 }
 
-#background-container {
+#page-wrapper {
     position: relative;
     width: 100%;
     max-width: 1640px;
@@ -32,9 +32,9 @@ h1 {
     /* font-family: 'Inter';
     font-style: normal; */
     font-weight: 600;
-    font-size: 128px;
-    line-height: 120px;
-    letter-spacing: -10px;
+    font-size: 8rem;
+    line-height: 7.5rem;
+    letter-spacing: -0.625rem;
     font-style: normal;
 
     hanging-punctuation: first last;
