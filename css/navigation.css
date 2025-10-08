@@ -51,7 +51,7 @@
 
 /* Underline for selected item, may not need box-shadow? */
 
-.divider {
+#divider-nav {
     width: 1px;
     height: 1.5rem;
     background-color: rgba(255, 255, 255, 0.12);

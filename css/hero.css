@@ -70,7 +70,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: calc(50% - 8rem);
+    width: calc(50%);
     height: 100%;
     margin-left: 4rem;
     margin-right: auto;
@@ -78,16 +78,54 @@
     z-index: 400;
 }
 
+#hero-text h1 {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+#hero-text h2 {
+    width: 32rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    margin: 4rem 0;
+    padding: 0;
+}
+
+#divider-hero {
+    position: relative;
+    width: 5rem;
+    height: 0.125rem;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 92, 183, 1);
+    flex-shrink: 0;
+}
+
+#hero-text p {
+    width: 24rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    padding: 0;
+}
+
+
 #discover-me-button {
     position: relative;
     width: fit-content;
-    height: fit-content;
+    height: 2.5rem;
     display: flex;
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
-    padding-left: 0.55rem;
-    padding-right: 0.55rem;
+    padding: 0 1rem;
     background: #005CB7;
     border-radius: 48px;
     cursor: pointer;
