@@ -35,9 +35,14 @@
     position: relative;
     display: inline-block;
     text-decoration: none;
+    color: rgba(0, 201, 254, 1);
 }
 
-#navigation-items a:before {
+#navigation-items a.active {
+    color: rgba(255, 255, 255, 1);
+}
+
+#navigation-items a:hover:before {
     content: "";
     position: absolute;
     margin-top: 1.75rem;
@@ -45,6 +50,17 @@
     /* height: 2px; */
     border-bottom: 2px solid rgba(243, 243, 243, 1);
     /* background-color: rgba(243, 243, 243, 1); */
+    mix-blend-mode: color-dodge;
+    box-shadow: 0px 0px 16px 4px rgba(194, 194, 194, 1);
+}
+
+/* Active state - shows underline for current page */
+#navigation-items a.active:before {
+    content: "";
+    position: absolute;
+    margin-top: 1.75rem;
+    width: 100%;
+    border-bottom: 2px solid rgba(243, 243, 243, 1);
     mix-blend-mode: color-dodge;
     box-shadow: 0px 0px 16px 4px rgba(194, 194, 194, 1);
 }
