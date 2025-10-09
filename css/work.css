@@ -1,3 +1,9 @@
 #work-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 276rem;
     background-color: rgba(245, 245, 245, 1);
+    overflow: hidden;
 }
