@@ -44,7 +44,6 @@ h1 {
     font-style: normal;
     text-transform: none;
 
-
     hanging-punctuation: first last;
     -webkit-hanging-punctuation: first last;
     -moz-hanging-punctuation: first last;
@@ -58,20 +57,26 @@ h1 {
 
 h2 {
     font-family: 'Font Awesome 7 Free';
-    color: rgba(255, 255, 255, 1);
-    margin: 0;
-}
-
-p {
-    font-family: 'Font Awesome 7 Free';
-    color: rgba(99, 108, 118, 1);
-    font-size: 1rem;
+    color: rgba(0, 8, 16, 1);
     margin: 0;
 }
 
 h3 {
     font-family: 'Font Awesome 7 Free';
     color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+
+h4 {
+    font-family: 'Font Awesome 7 Free';
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    margin: 0;
+}
+
+p {
+    font-family: 'Font Awesome 7 Free';
+    color: rgba(99, 108, 118, 1);
     font-size: 1rem;
     margin: 0;
 }
@@ -93,7 +98,7 @@ h3 {
     z-index: 400;
 }
 
-.button h3 {
+.button h4 {
     pointer-events: none;
     user-select: none;
 }

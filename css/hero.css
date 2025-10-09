@@ -88,7 +88,7 @@
     align-items: center;
 }
 
-#hero-text h2 {
+#hero-text h3 {
     width: 32rem;
     height: 3rem;
     display: flex;
@@ -118,7 +118,7 @@
 }
 
 /* #region hero-blocks */
-#hero-blocks {
+.pixel-blocks {
     position: absolute;
     left: 0;
     bottom: 0;

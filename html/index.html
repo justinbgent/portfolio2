@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../css/logo.css">
     <link rel="stylesheet" href="../css/navigation.css">
     <link rel="stylesheet" href="../css/hero.css">
+
+    <script src="../js/navigation.js"></script>
 </head>
 
 <body>
@@ -35,19 +37,19 @@
             <div id="hero-content">
                 <div id="hero-text">
                     <h1>Hello.</h1>
-                    <h2>I'm Justin. I code intuitive interfaces and immersive experiences for gamers.</h2>
+                    <h3>I'm Justin. I code intuitive interfaces and immersive experiences for gamers.</h3>
                     <div id="divider-hero"></div>
                     <p>I’m the kind of developer who gets excited about clean code and a well-commented function.</p>
                     <div class="button">
-                        <h3>Discover Me</h3>
-                        <h3>v</h3>
+                        <h4>Discover Me</h4>
+                        <h4>v</h4>
                     </div>
                 </div>
             </div>
             <img id="hero-bg-img" src="../assets/hero_bg.png" alt="Hero background">
             <img id="union-img" src="../assets/Union.svg" alt="Union">
             <img id="portrait-img" src="../assets/portrait.png" alt="Portrait">
-            <div id="hero-blocks">
+            <div class="pixel-blocks">
                 <div class="block-row">
                     <div class="square" id="square-1"></div>
                     <div class="square" id="square-2"></div>
@@ -161,11 +163,236 @@
             </div>
         </div>
 
-    </div>
+        <div id="about-wrapper">
+            <div id="about-content">
+                <h1>About.</h1>
+                <h3>When I’m not bringing digital worlds to life, you can probably find me playing them (for research,
+                    of course). I love tackling new challenges, whether it's optimizing performance on a mobile game or
+                    building a tool that solves a real-world problem. Ultimately, I'm here to build things that are not
+                    only functional, but also a joy to use.</h3>
+                <p>I’m the kind of developer who gets excited about clean code and a well-commented function.</p>
+                <div class="button">
+                    <h4>View My Work</h4>
+                    <h4>v</h4>
+                </div>
+                <video id="about-video" src="../assets/SI-website-video-02.mp4" loop muted>
+                    <h1>Watch.</h1>
+                    <p>I’m the kind of developer who gets excited about clean code and a well-commented function.</p>
+                    <div class="button">
+                        <h4>Watch Demo Reel</h4>
+                        <h4>v</h4>
+                    </div>
+                </video>
+            </div>
+        </div>
+
+        <div id="work-wrapper">
+            <div id="work-content">
+                <h1>Work.</h1>
+                <h3>I've found that the best way to grow is to build, break, and rebuild, and this site is a reflection
+                    of that continuous cycle of improvement. It’s a showcase of my skills, a journal of my growth, and a
+                    peek into what I can build for you.</h3>
+                <div class="work-section">
+                    <div class="work-focus">
+                        <div class="left-side">
+                            <h2>Astrodawn</h2>
+                            <video class="work-si-video" src="../assets/SI-website-video-02.mp4" loop muted>
+                                <p>In Development</p>
+                                <div class="button">
+                                    <h4>Watch Gameplay</h4>
+                                    <h4>v</h4>
+                                </div>
+                            </video>
+                        </div>
+                        <div class="right-side">
+                            <div class="button">
+                                <h4>Coming to Steam</h4>
+                                <h4>v</h4>
+                            </div>
+                            <h5>Role</h5>
+                            <p>Lead Developer</p>
+                            <h5>Tooling</h5>
+                            <p>C#, Unity, LiteNetLib, Cursor AI, Github</p>
+                            <h5>Platforms</h5>
+                            <p>PC, Mobile (maybe)</p>
+                        </div>
+                    </div>
+                    <div class="work-description">
+                        <h3>Astrodawn is a high-stakes space shooter that throws you into the heart of a chaotic
+                            interstellar conflict. With the visuals done by my brother, I engineered the core mechanics
+                            from the ground up, focusing on a fluid combat system, multiplayer, and responsive ship
+                            controls. The game features intense dogfights, exploration, and spaceship progression.</h3>
+                    </div>
+                </div>
+                <div class="work-section">
+                    <div class="work-focus">
+                        <div class="left-side">
+                            <h2>Fall'n Fly</h2>
+                            <div class="work-img-container">
+                                <img class="work-img" src="../assets/fallnfly.png" alt="Fall'n Fly">
+                                <p>Completed 2025</p>
+                                <div class="button">
+                                    <h4>Watch Gameplay</h4>
+                                    <h4>v</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="mobile-store-buttons">
+                                <img src="../assets/app-store-badge.png" alt="App Store"
+                                    href="https://apps.apple.com/us/app/falln-fly/id6740153691">
+                                <img src="../assets/google-play-badge.png" alt="Google Play"
+                                    href="https://play.google.com/store/apps/details?id=fallnfly.megalith">
+                            </div>
+                            <h5>Role</h5>
+                            <p>Lead Developer</p>
+                            <h5>Tooling</h5>
+                            <p>C#, Unity, VS Code, Github</p>
+                            <h5>Platforms</h5>
+                            <p>Android, iOS</p>
+                        </div>
+                    </div>
+                    <div class="work-description">
+                        <h3>Who says mobile games have to be simple? Fall'n Fly is a physics-based mobile game that
+                            challenges players with a simple yet addictive concept. I developed the full-stack
+                            architecture for this project, optimizing it for both the App Store and Google Play to
+                            ensure a seamless experience across all devices.</h3>
+                    </div>
+                </div>
+                <div class="work-section">
+                    <div class="work-focus">
+                        <div class="left-side">
+                            <h2>Rekor Blue</h2>
+                            <div class="work-img-container">
+                                <img class="work-img" src="../assets/rekorblue.png" alt="Rekor Blue">
+                                <p>Completed 2022</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="mobile-store-buttons">
+                                <img src="../assets/google-play-badge.png" alt="Google Play"
+                                    href="https://play.google.com/store/apps/details?id=ai.rekor.rekorblue">
+                            </div>
+                            <h5>Role</h5>
+                            <p>Android Developer</p>
+                            <h5>Tooling</h5>
+                            <p>Android Studio, Kotlin, Github, XML, Fragments, Room Database, Navigation Component,
+                                Retrofit, Coroutines</p>
+                            <h5>Platforms</h5>
+                            <p>Android, iOS</p>
+                        </div>
+                    </div>
+                    <div class="work-description">
+                        <h3>Rekor Blue scans license plates. Worked a lot with CameraX fine tuning configurations and
+                            sending frames to the License Plate Recognition library we interacted with through the JNI
+                            framework. I helped structure the Room database for saving plate reads, hot lists, and other
+                            data pieces. To be brief here are a few other contributions, REST API interactions for
+                            signing in, uploading plate reads, downloading hot lists, downloading and extracting zip
+                            configuration files, and creating application settings among other things.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-wrapper">
+            <div id="contact-content">
+                <h1>Let's talk.</h1>
+                <h3>I'm always on the hunt for a challenge, and I bring a whole toolkit of skills and a sugar-fueled
+                    passion for creating awesome digital experiences. If you've got a project that needs a developer who
+                    lives and breathes elegant code, consider my resume officially submitted. I'm ready to roll up my
+                    sleeves and build something incredible with you.</h3>
+                <div class="button">
+                    <h4>Enter your email...</h4>
+                    <h4>v</h4>
+                </div>
+                <div id="contact-bottom">
+                    <p>I'm the kind of developer who gets excited about clean code and a well-commented function.</p>
+                    <div id="contact-buttons">
+                        <div class="button">
+                            <h4>Get in Touch</h4>
+                            <h4>v</h4>
+                        </div>
+                        <div class="button">
+                            <h4>View Resume</h4>
+                            <h4>v</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="pixel-blocks">
+                    <div class="block-row">
+                        <div class="square" id="square-101"></div>
+                        <div class="square" id="square-102"></div>
+                        <div class="square" id="square-103"></div>
+                        <div class="square" id="square-104"></div>
+                        <div class="square" id="square-105"></div>
+                        <div class="square" id="square-106"></div>
+                        <div class="square" id="square-107"></div>
+                        <div class="square" id="square-108"></div>
+                        <div class="square" id="square-109"></div>
+                        <div class="square" id="square-110"></div>
+                        <div class="square" id="square-111"></div>
+                        <div class="square" id="square-112"></div>
+                        <div class="square" id="square-113"></div>
+                        <div class="square" id="square-114"></div>
+                        <div class="square" id="square-115"></div>
+                        <div class="square" id="square-116"></div>
+                        <div class="square" id="square-117"></div>
+                        <div class="square" id="square-118"></div>
+                        <div class="square" id="square-119"></div>
+                        <div class="square" id="square-120"></div>
+                    </div>
+                    <div class="block-row">
+                        <div class="square" id="square-121"></div>
+                        <div class="square" id="square-122"></div>
+                        <div class="square" id="square-123"></div>
+                        <div class="square" id="square-124"></div>
+                        <div class="square" id="square-125"></div>
+                        <div class="square" id="square-126"></div>
+                        <div class="square" id="square-127"></div>
+                        <div class="square" id="square-128"></div>
+                        <div class="square" id="square-129"></div>
+                        <div class="square" id="square-130"></div>
+                        <div class="square" id="square-131"></div>
+                        <div class="square" id="square-132"></div>
+                        <div class="square" id="square-133"></div>
+                        <div class="square" id="square-134"></div>
+                        <div class="square" id="square-135"></div>
+                        <div class="square" id="square-136"></div>
+                        <div class="square" id="square-137"></div>
+                        <div class="square" id="square-138"></div>
+                        <div class="square" id="square-139"></div>
+                        <div class="square" id="square-140"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="finale-wrapper">
+            <div id="finale-content">
+                <h1>Finale.</h1>
+                <h3>I’m self-motivated, constantly learning, and genuinely excited to bring your vision to life.</h3>
+                <div id="finale-bottom">
+                    <div id="finale-box-1">
+                        <p>© 2025 justingent.com</p>
+                        <p>All rights reserved.</p>
+                    </div>
+                    <div id="finale-box-2">
+                        <h5>Details</h5>
+                        <p>justinbgent@gmail.com</p>
+                    </div>
+                    <div id="finale-box-3">
+                        <h5>Socials</h5>
+                        <div id="socials">
+                            <img src="../assets/linkedin.svg" alt="LinkedIn">
+                            <img src="../assets/github.svg" alt="GitHub">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
-    <script src="../js/navigation.js"></script>
 </body>
 
 </html>
