@@ -34,11 +34,12 @@
     z-index: 100;
 }
 
+/* this positioning is wrong. Needs to align consistently to particular image position*/
 #hero-bg-gradient-overlay {
     position: absolute;
-    top: 7rem;
-    left: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -97%);
     width: 19rem;
     height: 19rem;
     margin: 0 auto;
