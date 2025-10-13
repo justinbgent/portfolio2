@@ -7,3 +7,59 @@
     background-color: rgba(245, 245, 245, 1);
     overflow: hidden;
 }
+
+#work-wrapper h1 {
+    margin: 10rem 0 4rem 4rem;
+    color: rgba(0, 8, 16, 1);
+}
+
+#work-wrapper h3 {
+    margin: 0 4rem;
+    color: rgba(0, 8, 16, 1);
+}
+
+/* .work-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 8rem);
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-focus {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+}
+
+.work-img {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+} */
+
+#work-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+#work-video-wrapper video {
+    position: absolute;
+    width: calc(100% - 8rem);
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+}
+
+#work-video-wrapper p {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+}
