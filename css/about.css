@@ -7,3 +7,41 @@
     background-color: rgba(245, 245, 245, 1);
     overflow: hidden;
 }
+
+#about-content h1 {
+    margin: 10rem 0 4rem 4rem;
+    color: rgba(0, 8, 16, 1);
+}
+
+#about-content h3 {
+    margin: 0 4rem;
+    color: rgba(0, 8, 16, 1);
+}
+
+.highlight-blue {
+    color: rgba(0, 92, 183, 1);
+}
+
+#about-content-button-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 8rem);
+    height: fit-content;
+    margin-top: 10rem;
+    margin-bottom: 10.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    align-items: center center;
+    justify-content: space-between;
+}
+
+#about-content p {
+    width: 50%;
+    height: fit-content;
+}
+
+#about-content-button-wrapper .button {
+    position: relative;
+    margin: 0;
+}
