@@ -108,4 +108,25 @@ p {
     outline-offset: 2px;
 }
 
+.button-layout {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 8rem);
+    height: fit-content;
+    margin: 0;
+    align-items: center center;
+    justify-content: space-between;
+}
+
+.button-layout p {
+    width: 50%;
+    height: fit-content;
+}
+
+.button-layout .button {
+    position: relative;
+    margin: 0;
+}
+
 /* #endregion button */

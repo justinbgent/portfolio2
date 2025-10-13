@@ -23,25 +23,42 @@
 }
 
 #about-content-button-wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: calc(100% - 8rem);
-    height: fit-content;
     margin-top: 10rem;
     margin-bottom: 10.5rem;
     margin-left: 4rem;
     margin-right: 4rem;
-    align-items: center center;
-    justify-content: space-between;
 }
 
-#about-content p {
-    width: 50%;
+#about-video-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     height: fit-content;
 }
 
-#about-content-button-wrapper .button {
+#about-video {
     position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+#about-video-wrapper h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 0;
+    padding: 0;
+    font-size: 16rem;
+    color: rgba(139, 139, 139, 1);
+    mix-blend-mode: color-dodge;
+    z-index: 100;
+}
+
+#about-video-button-wrapper {
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
