@@ -9,26 +9,53 @@
 }
 
 #work-wrapper h1 {
-    margin: 10rem 0 4rem 4rem;
+    margin-top: 10rem;
+    color: rgba(0, 8, 16, 1);
+}
+
+#work-wrapper h2 {
     color: rgba(0, 8, 16, 1);
 }
 
 #work-wrapper h3 {
-    margin: 0 4rem;
+    margin-top: 4rem;
     color: rgba(0, 8, 16, 1);
 }
 
-/* .work-section {
+#work-content {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: calc(100% - 8rem);
+    width: 100%;
     height: fit-content;
+    max-width: 1640px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    overflow: hidden;
 }
 
-.work-focus {
+.work-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-top: 20rem;
+}
+
+.section-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-focus {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -36,11 +63,47 @@
     height: fit-content;
 }
 
+.left-side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: fit-content;
+}
+
+.right-side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: fit-content;
+}
+
 .work-img {
+    position: relative;
     width: 100%;
     height: fit-content;
     object-fit: cover;
-} */
+}
+
+.mobile-store-buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+    height: fit-content;
+}
+
+.mobile-store-buttons img {
+    position: relative;
+    width: auto;
+    height: 3rem;
+    aspect-ratio: initial;
+    object-fit: fill;
+}
 
 #work-video-wrapper {
     position: relative;
@@ -49,7 +112,7 @@
 }
 
 #work-video-wrapper video {
-    position: absolute;
+    position: relative;
     width: calc(100% - 8rem);
     margin-left: auto;
     margin-right: auto;
@@ -57,7 +120,7 @@
 }
 
 #work-video-wrapper p {
-    position: absolute;
+    position: relative;
     width: fit-content;
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.4);
