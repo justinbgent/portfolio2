@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 276rem;
+    height: fit-content;
     background-color: rgba(245, 245, 245, 1);
     overflow: hidden;
 }
@@ -28,7 +28,6 @@
     flex-direction: column;
     width: 100%;
     height: fit-content;
-    max-width: 1640px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 4rem;
@@ -42,7 +41,7 @@
     flex-direction: column;
     width: 100%;
     height: fit-content;
-    margin-top: 20rem;
+    margin-top: 12rem;
 }
 
 .section-header {
