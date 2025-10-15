@@ -41,7 +41,7 @@
     flex-direction: column;
     width: 100%;
     height: fit-content;
-    margin-top: 12rem;
+    margin-bottom: 10rem;
 }
 
 .section-header {
@@ -50,8 +50,29 @@
     flex-direction: row;
     width: 100%;
     height: fit-content;
-    justify-content: space-between;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
     align-items: center;
+}
+
+#steam-button {
+    position: absolute;
+    width: auto;
+    height: 3rem;
+    margin-left: 72%;
+    display: flex;
+    align-items: center;
+}
+
+.work-description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    height: fit-content;
+    max-width: 67.5rem;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .section-focus {
@@ -66,7 +87,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 68%;
     height: fit-content;
 }
 
@@ -74,10 +95,14 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
+    align-items: flex-start;
+    width: 28%;
     height: fit-content;
+    margin-left: 4%;
+}
+
+.right-side p {
+    margin-bottom: 2rem;
 }
 
 .work-img {
@@ -88,19 +113,19 @@
 }
 
 .mobile-store-buttons {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 40%;
+    width: auto;
     height: fit-content;
+    margin-left: 72%;
+    gap: 1rem;
 }
 
 .mobile-store-buttons img {
     position: relative;
     width: auto;
     height: 3rem;
-    aspect-ratio: initial;
     object-fit: fill;
 }
 
@@ -108,20 +133,40 @@
     position: relative;
     width: 100%;
     height: fit-content;
+    display: flex;
+    align-items: flex-start;
 }
 
 #work-video-wrapper video {
     position: relative;
-    width: calc(100% - 8rem);
-    margin-left: auto;
+    width: 100%;
+    margin-left: 0;
     margin-right: auto;
     height: fit-content;
 }
 
-#work-video-wrapper p {
-    position: relative;
-    width: fit-content;
-    height: fit-content;
+#work-video-wrapper p,
+#fallnfly-display p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(12px);
+}
+
+#work-video-wrapper .button,
+#fallnfly-display .button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: fit-content;
+    height: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
 }

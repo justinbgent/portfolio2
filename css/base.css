@@ -36,7 +36,6 @@ h1 {
     width: fit-content;
     height: fit-content;
 
-    font-family: 'Font Awesome 7 Free';
     font-weight: 600;
     font-size: 8rem;
     line-height: 7.5rem;
@@ -49,9 +48,13 @@ h1 {
     -moz-hanging-punctuation: first last;
     -ms-hanging-punctuation: first last;
     -o-hanging-punctuation: first last;
+}
 
+h1,
+h3,
+h4 {
+    font-family: 'Font Awesome 7 Free';
     color: rgba(255, 255, 255, 1);
-
     margin: 0;
 }
 
@@ -65,17 +68,16 @@ h2 {
     padding: 0;
 }
 
-h3 {
-    font-family: 'Font Awesome 7 Free';
-    color: rgba(255, 255, 255, 1);
-    margin: 0;
+h4 {
+    font-size: 1rem;
 }
 
-h4 {
+h5 {
     font-family: 'Font Awesome 7 Free';
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 8, 16, 1);
     font-size: 1rem;
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 p {
