@@ -214,7 +214,7 @@
                     <div class="section-focus">
                         <div class="left-side">
                             <div id="work-video-wrapper">
-                                <video class="work-si-video" src="../assets/SI-website-video-02.mp4" loop muted></video>
+                                <video id="work-si-video" src="../assets/SI-website-video-02.mp4" loop muted></video>
                                 <p>In Development</p>
                                 <div class="button">
                                     <h4>Watch Gameplay</h4>
@@ -251,7 +251,7 @@
                     <div class="section-focus">
                         <div class="left-side">
                             <div id="fallnfly-display" class="work-img-container">
-                                <img class="work-img" src="../assets/fallnfly.png" alt="Fall'n Fly">
+                                <img src="../assets/fallnfly.png" alt="Fall'n Fly">
                                 <p>Completed 2025</p>
                                 <div class="button">
                                     <h4>Watch Gameplay</h4>
@@ -285,8 +285,8 @@
                     </div>
                     <div class="section-focus">
                         <div class="left-side">
-                            <div class="work-img-container">
-                                <img class="work-img" src="../assets/rekor.svg" alt="Rekor Blue">
+                            <div id="rekor-display" class="work-img-container">
+                                <img src="../assets/rekor.svg" alt="Rekor Blue">
                                 <p>Completed 2022</p>
                             </div>
                         </div>
@@ -294,19 +294,28 @@
                             <h5>Role</h5>
                             <p>Android Developer</p>
                             <h5>Tooling</h5>
-                            <p>Android Studio, Kotlin, Github, XML, Fragments, Room Database, Navigation Component,
-                                Retrofit, Coroutines</p>
+                            <p>Android Studio, Kotlin, Github, Room Database, Navigation Component, CameraX,
+                                Retrofit, Coroutines, REST API</p>
                             <h5>Platforms</h5>
                             <p>Android, iOS</p>
                         </div>
                     </div>
                     <div class="work-description">
-                        <h3>Rekor Blue scans license plates. Worked a lot with CameraX fine tuning configurations and
-                            sending frames to the License Plate Recognition library we interacted with through the JNI
-                            framework. I helped structure the Room database for saving plate reads, hot lists, and other
-                            data pieces. To be brief here are a few other contributions, REST API interactions for
-                            signing in, uploading plate reads, downloading hot lists, downloading and extracting zip
-                            configuration files, and creating application settings among other things.</h3>
+                        <h3>Rekor Blue, scans license plates with precision. It was built to quickly capture frames,
+                            piping them to a License Plate Recognition library for fast processing. The plate numbers
+                            were compared against hot lists and if a match was found, the user was notified. This was
+                            paired with a local database and a REST API for user authentication, managing configuration
+                            files, and storing data from scanning sessions.
+                        </h3>
+                        <!-- <h3>I contributed to the development of Rekor Blue, an Android application designed for license
+                            plate recognition. My work focused on integrating and optimizing CameraX to capture and
+                            process frames, interfacing with a License Plate Recognition library via the JNI framework
+                            for efficient real-time processing. I designed and implemented a Room database to manage
+                            license plate reads, hot lists, and related data, ensuring robust data storage and
+                            retrieval. Additionally, I developed REST API integrations to handle user authentication,
+                            upload plate reads, download hot lists, and manage configuration files (including
+                            downloading and extracting zip files). I also contributed to building application settings
+                            and other core functionalities, enhancing the app's performance and user experience.</h3> -->
                     </div>
                 </div>
             </div>

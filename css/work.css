@@ -80,7 +80,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: fit-content;
+    height: auto;
 }
 
 .left-side {
@@ -88,7 +88,9 @@
     display: flex;
     flex-direction: column;
     width: 68%;
-    height: fit-content;
+    height: auto;
+    aspect-ratio: 16/9;
+    overflow: hidden;
 }
 
 .right-side {
@@ -103,13 +105,6 @@
 
 .right-side p {
     margin-bottom: 2rem;
-}
-
-.work-img {
-    position: relative;
-    width: 100%;
-    height: fit-content;
-    object-fit: cover;
 }
 
 .mobile-store-buttons {
@@ -137,16 +132,17 @@
     align-items: flex-start;
 }
 
-#work-video-wrapper video {
+#work-si-video {
     position: relative;
+    height: 100%;
     width: 100%;
-    margin-left: 0;
-    margin-right: auto;
-    height: fit-content;
+    object-fit: cover;
+    background-color: black;
 }
 
 #work-video-wrapper p,
-#fallnfly-display p {
+#fallnfly-display p,
+#rekor-display p {
     position: absolute;
     top: 0;
     left: 0;
@@ -169,4 +165,39 @@
     height: 3rem;
     margin-left: 2rem;
     margin-bottom: 2rem;
+}
+
+.work-img-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    display: flex;
+    overflow: hidden;
+}
+
+#fallnfly-display img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+#rekor-display {
+    background-color: rgba(0, 27, 37, 1);
+}
+
+#rekor-display img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48.4%;
+    height: auto;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
 }
