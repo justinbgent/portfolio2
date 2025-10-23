@@ -25,3 +25,37 @@
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
+
+#contact-bottom {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+#contact-bottom p {
+    width: 26rem;
+    height: fit-content;
+    max-width: 50%;
+}
+
+#contact-buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    gap: 1rem;
+}
+
+#contact-wrapper .pixel-blocks {
+    margin-top: 10rem;
+    aspect-ratio: 10 / 1;
+}
+
+#contact-wrapper .block-row {
+    height: 50%;
+}
