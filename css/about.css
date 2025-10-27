@@ -29,6 +29,10 @@
     background-color: rgba(0, 8, 16, 1);
 }
 
+#about-content-button-wrapper p {
+    color: rgba(0, 0, 0, 0.56);
+}
+
 #about-video-wrapper {
     position: relative;
     display: flex;
@@ -64,4 +68,8 @@
     flex-direction: row;
     align-items: center;
     transform: translate(-50%, 0);
+}
+
+#about-video-button-wrapper p {
+    color: rgba(255, 255, 255, 0.56);
 }

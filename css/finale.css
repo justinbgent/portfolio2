@@ -38,6 +38,15 @@
     margin-top: 4rem;
 }
 
+#finale-bottom h5 {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    color: rgba(255, 255, 255, 1);
+    size: 1.5rem;
+}
+
 #finale-bottom {
     position: relative;
     display: flex;
@@ -59,6 +68,36 @@
     height: 100%;
     justify-content: flex-start;
     /* align-items: flex-start; */
+}
+
+#legal-info {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-top: auto;
+}
+
+#legal-info-copyright {
+    color: rgba(255, 255, 255, 1);
+}
+
+#legal-info-rights {
+    margin-top: 0.5rem;
+    color: rgba(255, 255, 255, 0.56);
+}
+
+#socials,
+#finale-box-2 p {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 100%;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+    color: rgba(0, 92, 183, 1);
 }
 
 .finale-box-background {
