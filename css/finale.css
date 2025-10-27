@@ -60,3 +60,40 @@
     justify-content: flex-start;
     /* align-items: flex-start; */
 }
+
+.finale-box-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.04);
+    mix-blend-mode: color-dodge;
+}
+
+#github {
+    position: relative;
+    width: 2.75rem;
+    height: 2.75rem;
+}
+
+#github-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#github-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.75rem;
+    height: 1.75rem;
+    object-fit: contain;
+    z-index: 200;
+}

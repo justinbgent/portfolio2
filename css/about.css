@@ -25,6 +25,10 @@
     margin-right: 4rem;
 }
 
+#about-content-button-wrapper .button {
+    background-color: rgba(0, 8, 16, 1);
+}
+
 #about-video-wrapper {
     position: relative;
     display: flex;

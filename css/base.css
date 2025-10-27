@@ -96,9 +96,9 @@ p {
 .button {
     position: relative;
     width: fit-content;
-    height: 2.5rem;
+    height: 3rem;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
@@ -109,8 +109,17 @@ p {
 }
 
 .button h4 {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
     pointer-events: none;
     user-select: none;
+}
+
+.button img {
+    position: relative;
+    width: auto;
+    height: 2rem;
 }
 
 .button:focus {
