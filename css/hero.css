@@ -36,7 +36,6 @@
     z-index: 100;
 }
 
-/* this positioning is wrong. Needs to align consistently to particular image position*/
 #hero-bg-gradient-overlay {
     position: absolute;
     top: 50%;
@@ -50,6 +49,30 @@
     pointer-events: none;
     z-index: 100;
 }
+
+/* #hero-bg-gradient-overlay-top-left {
+    position: absolute;
+    left: -67.92%;
+    right: 23.19%;
+    top: -78.94%;
+    bottom: 21.06%;
+    background: radial-gradient(50% 50% at 50% 50%, #E9E9E9 0%, rgba(0, 8, 14, 0) 100%);
+    mix-blend-mode: color-dodge;
+    pointer-events: none;
+    z-index: 100;
+}
+
+#hero-bg-gradient-overlay-bottom {
+    position: absolute;
+    left: -45.14%;
+    right: 0.42%;
+    top: 12.42%;
+    bottom: -70.3%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(233, 233, 233, 0.64) 0%, rgba(0, 8, 14, 0) 100%);
+    mix-blend-mode: color-dodge;
+    pointer-events: none;
+    z-index: 100;
+} */
 
 /* #hero-fg-container {
     position: absolute;

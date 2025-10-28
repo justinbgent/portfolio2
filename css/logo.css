@@ -27,6 +27,7 @@ will have to play with z indexes */
     width: 57%;
     height: 146%;
     background: radial-gradient(50% 50% at 50% 25%, #717171 0%, rgba(0, 0, 0, 0) 100%);
+    backdrop-filter: blur(32px);
     mix-blend-mode: color-dodge;
     z-index: 300;
     pointer-events: none;
