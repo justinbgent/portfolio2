@@ -125,7 +125,7 @@
 }
 
 #hero-text p {
-    width: 24rem;
+    width: 22.5rem;
     height: 2rem;
     display: flex;
     align-items: center;
@@ -140,3 +140,22 @@
     left: 0;
     bottom: 0;
 }
+
+/* Tablet */
+@media (max-width: 991px) {
+    #hero-text {
+        margin-left: 3rem;
+    }
+
+    #hero-text p {
+        width: 20rem;
+        margin-bottom: 3rem;
+    }
+
+    #hero-text h3 {
+        margin: 3rem 0;
+    }
+}
+
+/* Mobile (May actually want this a bit smaller in width) */
+@media (max-width: 767px) {}

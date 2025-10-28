@@ -10,6 +10,7 @@
 
 #work-wrapper h1 {
     margin-top: 10rem;
+    margin-bottom: 4rem;
     color: rgba(0, 8, 16, 1);
 }
 
@@ -18,7 +19,6 @@
 }
 
 #work-wrapper h3 {
-    margin-top: 4rem;
     color: rgba(0, 8, 16, 1);
 }
 
@@ -33,6 +33,15 @@
     padding-left: 4rem;
     padding-right: 4rem;
     overflow: hidden;
+}
+
+#work-content-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10rem;
 }
 
 .work-section {
@@ -59,18 +68,19 @@
     position: absolute;
     width: auto;
     height: 3rem;
-    margin-left: 72%;
-    display: flex;
-    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
 }
 
 .work-description {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 66%;
+    width: 80%;
     height: fit-content;
-    max-width: 67.5rem;
+    margin-top: 4rem;
     margin-left: auto;
     margin-right: 0;
 }
@@ -83,7 +93,7 @@
     height: auto;
 }
 
-.left-side {
+.section-start {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -93,7 +103,7 @@
     overflow: hidden;
 }
 
-.right-side {
+.section-end {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -103,8 +113,19 @@
     margin-left: 4%;
 }
 
-.right-side p {
+.section-end p {
     margin-bottom: 2rem;
+}
+
+.role,
+.tooling,
+.platforms {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: fit-content;
 }
 
 .mobile-store-buttons {
@@ -113,7 +134,10 @@
     flex-direction: row;
     width: auto;
     height: fit-content;
-    margin-left: calc(72% - 4rem);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto 0;
     gap: 1rem;
 }
 
@@ -199,3 +223,85 @@
     transform: translate(-50%, -50%);
     transform-origin: center center;
 }
+
+/* Tablet */
+@media (max-width: 991px) {
+
+    #work-wrapper h1 {
+        margin-top: 6.5rem;
+    }
+
+    #work-content {
+        padding: 0 3rem;
+    }
+
+    #work-content-header {
+        margin-bottom: 6.5rem;
+    }
+
+    .work-section {
+        margin-bottom: 6.5rem;
+    }
+
+    .section-header {
+        margin-top: 6.5rem;
+    }
+
+    .section-focus {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .section-start {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+    }
+
+    .section-end {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+        gap: 2rem;
+    }
+
+    .role,
+    .tooling,
+    .platforms {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .role p,
+    .tooling p,
+    .platforms p {
+        margin-bottom: 0;
+    }
+
+    .work-description {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        margin-top: 3rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Mobile (May actually want this a bit smaller in width) */
+@media (max-width: 767px) {}

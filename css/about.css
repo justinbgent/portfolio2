@@ -8,21 +8,25 @@
     overflow: hidden;
 }
 
+#about-content {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
 #about-content h1 {
-    margin: 10rem 0 4rem 4rem;
+    margin: 10rem 0 4rem 0;
     color: rgba(0, 8, 16, 1);
 }
 
 #about-content h3 {
-    margin: 0 4rem;
+    margin: 0;
     color: rgba(0, 8, 16, 1);
 }
 
 #about-content-button-wrapper {
-    margin-top: 10rem;
-    margin-bottom: 10.5rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    width: 100%;
+    height: fit-content;
+    margin: 10rem 0;
 }
 
 #about-content-button-wrapper .button {
@@ -30,6 +34,9 @@
 }
 
 #about-content-button-wrapper p {
+    width: 22.5rem;
+    height: fit-content;
+    margin: auto 0;
     color: rgba(0, 0, 0, 0.56);
 }
 
@@ -73,3 +80,24 @@
 #about-video-button-wrapper p {
     color: rgba(255, 255, 255, 0.56);
 }
+
+/* Tablet */
+@media (max-width: 991px) {
+    #about-content {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    #about-content h1 {
+        margin: 6.5rem 0 4rem 0;
+    }
+
+    #about-content-button-wrapper {
+        width: 100%;
+        height: fit-content;
+        margin: 7rem 0;
+    }
+}
+
+/* Mobile (May actually want this a bit smaller in width) */
+@media (max-width: 767px) {}

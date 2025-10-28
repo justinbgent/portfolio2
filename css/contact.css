@@ -124,3 +124,26 @@
 #contact-wrapper .block-row {
     height: 50%;
 }
+
+/* Tablet */
+@media (max-width: 991px) {
+
+    #contact-content {
+        margin: 0 3rem;
+    }
+
+    #contact-content h1 {
+        margin-top: 6.5rem;
+    }
+
+    #contact-bottom {
+        margin-top: 7rem;
+    }
+
+    #contact-wrapper .pixel-blocks {
+        margin-top: 6.5rem;
+    }
+}
+
+/* Mobile (May actually want this a bit smaller in width) */
+@media (max-width: 767px) {}

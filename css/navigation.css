@@ -73,3 +73,13 @@
     background-color: rgba(255, 255, 255, 0.12);
     flex-shrink: 0;
 }
+
+/* Tablet */
+@media (max-width: 991px) {
+    #navigation {
+        padding: 0 3rem;
+    }
+}
+
+/* Mobile (May actually want this a bit smaller in width) */
+@media (max-width: 767px) {}
