@@ -87,12 +87,12 @@
 }
 
 #socials,
-#finale-box-2 p {
+#finale-box-2 a {
     position: relative;
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-    width: 100%;
+    width: fit-content;
     height: fit-content;
     margin-top: auto;
     margin-bottom: 3rem;
