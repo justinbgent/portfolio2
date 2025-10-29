@@ -97,6 +97,16 @@
         height: fit-content;
         margin: 7rem 0;
     }
+
+    #about-video-wrapper h1 {
+        margin: 0;
+        font-size: 14rem;
+    }
+
+    #about-video-button-wrapper {
+        width: calc(100% - 6rem);
+        bottom: 2.5rem;
+    }
 }
 
 /* Mobile (May actually want this a bit smaller in width) */

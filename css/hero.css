@@ -3,11 +3,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 0.9;
+    height: fit-content;
     /* height: 83rem; */
-    min-height: 54rem;
-    max-height: 82rem;
     /* max-height: calc(48rem + 35vw); */
     background-color: rgba(0, 8, 16, 1);
     overflow: hidden;
@@ -74,35 +71,34 @@
     z-index: 100;
 } */
 
-/* #hero-fg-container {
+#midground-img-container {
     position: absolute;
-    top: 160px;
-    left: 50%;
-    width: 50%;
+    top: 10rem;
+    bottom: 0;
+    right: 0;
+    width: 100%;
     height: 100%;
-    overflow: hidden;
-} */
+    z-index: 200;
+}
 
 #union-img {
     position: absolute;
-    /* top: 10rem; */
-    bottom: 28%;
+    top: 0;
     right: 0;
     width: auto;
-    height: calc(100% - 10rem - 28%);
-    object-fit: cover;
+    height: 63%;
+    object-fit: contain;
     transform: translate(-34%, 0);
     z-index: 200;
 }
 
 #portrait-img {
     position: absolute;
-    /* top: 10rem; */
-    bottom: 20%;
+    top: 0;
     right: 0;
     width: auto;
-    height: calc(100% - 10rem - 20%);
-    object-fit: cover;
+    height: 71%;
+    object-fit: contain;
     transform: translate(38%, 0);
     z-index: 300;
 }
@@ -111,7 +107,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: calc(50%);
+    width: 50%;
     height: fit-content;
     margin-left: 4rem;
     margin-right: auto;
@@ -129,8 +125,9 @@
 }
 
 #hero-text h3 {
-    width: 32rem;
-    height: 3rem;
+    width: 100%;
+    height: fit-content;
+    max-width: 40rem;
     display: flex;
     align-items: center;
     margin: 4rem 0;
@@ -148,7 +145,7 @@
 }
 
 #hero-text p {
-    width: 22.5rem;
+    width: 20rem;
     height: 2rem;
     display: flex;
     align-items: center;
@@ -158,27 +155,111 @@
     color: rgba(99, 108, 118, 1);
 }
 
-#hero-content .pixel-blocks {
+#pixel-blocks-margin-top {
+    position: relative;
+    width: 100%;
+    --potential-height: calc(9rem + (100vw - 991px));
+    height: clamp(9rem, var(--potential-height), 20rem);
+}
+
+/* #hero-wrapper .pixel-blocks {
     position: absolute;
     left: 0;
     bottom: 0;
-}
+} */
 
 /* Tablet */
 @media (max-width: 991px) {
+    #hero-wrapper {
+        min-height: unset;
+        max-height: unset;
+        aspect-ratio: unset;
+        height: fit-content;
+    }
+
     #hero-text {
         margin-left: 3rem;
+        width: 45%;
     }
 
     #hero-text p {
-        width: 20rem;
+        /* width: 20rem; */
         margin-bottom: 3rem;
     }
 
     #hero-text h3 {
+        /* width: 20rem; */
         margin: 3rem 0;
     }
 }
 
 /* Mobile (May actually want this a bit smaller in width) */
-@media (max-width: 767px) {}
+@media (max-width: 890px) {
+    /* #hero-wrapper {
+        aspect-ratio: unset;
+        height: fit-content;
+    } */
+
+    #hero-bg-img {
+        top: -65rem;
+        left: 50%;
+        width: fit-content;
+        height: fit-content;
+        transform: translate(-50%, 0%);
+    }
+
+    #hero-bg-gradient-overlay {
+        top: -65rem;
+        left: 50%;
+        /* If two absolutes in the same container share the same top/left value
+        they'll adjust with each other maintaining the same relative space as the
+        container resizes. */
+        transform: translate(-50%, 384%);
+    }
+
+    #hero-text {
+        /* margin: 0 1.5rem; */
+        width: calc(100% - 3rem);
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    #hero-text h3 {
+        width: 100%;
+        margin: 3rem 0;
+    }
+
+    #hero-text p {
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    #midground-img-container {
+        position: relative;
+        top: unset;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 13/14;
+        background-color: rgba(245, 245, 245, 1);
+    }
+
+    #union-img {
+        top: 2.25rem;
+        height: 100%;
+        transform: translateX(-40%);
+        filter: brightness(0);
+    }
+
+    #portrait-img {
+        top: 2.25rem;
+        height: 100%;
+        transform: translateX(32%);
+    }
+
+    /* #hero-text h3 {
+        margin: 3rem 0;
+    } */
+
+    /* #hero-wrapper .pixel-blocks {
+    } */
+}
