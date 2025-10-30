@@ -127,7 +127,6 @@
 
 /* Tablet */
 @media (max-width: 991px) {
-
     #contact-content {
         margin: 0 3rem;
     }
@@ -143,7 +142,60 @@
     #contact-wrapper .pixel-blocks {
         margin-top: 6.5rem;
     }
+
 }
 
-/* Mobile (May actually want this a bit smaller in width) */
-@media (max-width: 767px) {}
+@media (max-width: 890px) {
+    #contact-content {
+        margin: 0 1.5rem;
+    }
+
+    #contact-content h1 {
+        margin-top: 4rem;
+        margin-bottom: 2.25rem;
+    }
+
+    #contact-content h3 {
+        margin-top: 0;
+    }
+
+    .input-wrapper {
+        width: 100%;
+        max-width: unset;
+    }
+
+    #right-arrow-icon {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+
+    #contact-bottom {
+        flex-wrap: wrap;
+        margin-top: 2.25rem;
+        gap: 2.5rem;
+    }
+
+    #contact-bottom p {
+        width: 100%;
+        max-width: unset;
+    }
+
+    #contact-buttons {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    #get-in-touch-button {
+        width: 100%;
+    }
+
+    #resume-button {
+        width: 100%;
+    }
+
+    #contact-wrapper .pixel-blocks {
+        margin-top: 4rem;
+    }
+
+}
