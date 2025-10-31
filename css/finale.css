@@ -1,7 +1,7 @@
 #finale-wrapper {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     width: 100%;
     height: fit-content;
     background-color: rgba(0, 8, 16, 1);
@@ -35,13 +35,12 @@
 
 #finale-content {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     width: calc(100% - 8rem);
     height: fit-content;
     margin: 0 auto;
-    justify-content: center;
-    align-items: left;
+    justify-items: start;
 }
 
 #finale-content h1 {
@@ -54,25 +53,24 @@
 
 #finale-bottom {
     position: relative;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     width: 100%;
     height: fit-content;
     margin-top: 12rem;
     margin-bottom: 4rem;
-    justify-content: space-between;
 }
 
 #finale-box-1,
 #finale-box-2,
 #finale-box-3 {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
     height: auto;
-    justify-content: flex-start;
-    /* align-items: flex-start; */
+    justify-items: start;
 }
 
 #legal-info {
@@ -103,8 +101,9 @@
 #socials,
 #finale-box-2 a {
     position: relative;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, auto);
+    grid-auto-flow: column;
     gap: 0.5rem;
     width: fit-content;
     height: fit-content;
@@ -194,17 +193,33 @@
     }
 
     #finale-bottom {
-        flex-direction: column;
-        gap: 1.5rem;
+        grid-template-columns: 1fr;
         margin-top: 4rem;
         margin-bottom: 1.5rem;
     }
 
-    #finale-box-1,
+    #finale-box-1 {
+        order: 2;
+        width: 100%;
+        height: fit-content;
+    }
+
     #finale-box-2,
     #finale-box-3 {
         width: 100%;
         height: fit-content;
+    }
+
+    #finale-box-2 {
+        order: 0;
+    }
+
+    #finale-box-3 {
+        order: 1;
+    }
+
+    #legal-info {
+        margin-top: 1.5rem;
     }
 
     #finale-bottom h5 {
