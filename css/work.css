@@ -14,10 +14,6 @@
     color: rgba(0, 8, 16, 1);
 }
 
-#work-wrapper h2 {
-    color: rgba(0, 8, 16, 1);
-}
-
 #work-wrapper h3 {
     color: rgba(0, 8, 16, 1);
 }
@@ -46,58 +42,78 @@
 
 .work-section {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
-    margin-bottom: 10rem;
-}
-
-.section-header {
-    position: relative;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-rows: min-content 4rem max-content 4rem 0rem 0rem max-content;
+    grid-template-columns: 1fr calc(26% + 4rem);
     width: 100%;
     height: fit-content;
     margin-top: 10rem;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
+}
+
+.work-section h2 {
+    position: relative;
+    grid-row: 1;
+    grid-column: 1 / 2;
+    width: max-content;
+    height: fit-content;
     align-items: center;
+    color: rgba(0, 8, 16, 1);
+}
+
+.mobile-store-buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    grid-row: 1;
+    grid-column: 2 / 3;
+    gap: 1rem;
+    align-self: center;
+}
+
+.mobile-store-buttons img {
+    position: relative;
+    width: auto;
+    height: 3rem;
+    object-fit: fill;
 }
 
 #steam-button {
-    position: absolute;
+    position: relative;
     width: auto;
     height: 3rem;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto 0;
+    grid-row: 1;
+    grid-column: 2 / 3;
+    /* justify-self: end; */
+    align-self: center;
 }
 
 .work-description {
+    grid-row: 7;
+    grid-column: 1 / 3;
     position: relative;
-    display: flex;
-    flex-direction: column;
     width: 80%;
     height: fit-content;
-    margin-top: 4rem;
-    margin-left: auto;
-    margin-right: 0;
+    justify-self: end;
 }
 
 .section-focus {
     position: relative;
-    display: flex;
-    flex-direction: row;
     width: 100%;
     height: auto;
+    grid-row: 3;
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: row;
 }
 
 .section-start {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: calc(68% - 4rem);
+    width: calc(70% - 4rem);
     height: auto;
     aspect-ratio: 16/9;
     overflow: hidden;
@@ -108,7 +124,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: calc(28% + 4rem);
+    width: calc(26% + 4rem);
     height: fit-content;
     margin-left: 4%;
 }
@@ -126,26 +142,6 @@
     align-items: flex-start;
     width: 100%;
     height: fit-content;
-}
-
-.mobile-store-buttons {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: fit-content;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto 0;
-    gap: 1rem;
-}
-
-.mobile-store-buttons img {
-    position: relative;
-    width: auto;
-    height: 3rem;
-    object-fit: fill;
 }
 
 #work-video-wrapper {
@@ -252,11 +248,13 @@
     }
 
     .work-section {
+        margin-top: 6.5rem;
         margin-bottom: 6.5rem;
     }
 
-    .section-header {
-        margin-top: 6.5rem;
+    .mobile-store-buttons,
+    #steam-button {
+        justify-self: end;
     }
 
     .section-focus {
@@ -309,7 +307,6 @@
         flex-direction: column;
         width: 100%;
         height: fit-content;
-        margin-top: 3rem;
         margin-left: 0;
         margin-right: 0;
     }
@@ -331,22 +328,34 @@
     }
 
     .work-section {
+        grid-template-rows: min-content 2.25rem max-content 2.25rem min-content 2.25rem max-content;
+        grid-template-columns: 1fr;
+        margin-top: 4rem;
         margin-bottom: 4rem;
     }
 
-    .section-header {
-        margin-top: 4rem;
-        margin-bottom: 0;
+    .mobile-store-buttons,
+    #steam-button {
+        grid-row: 5;
+        grid-column: 1 / 2;
+        justify-self: start;
     }
 
-    .section-focus {
-        margin: 2.25rem 0;
+    .section-focus,
+    .work-description {
+        grid-column: 1;
     }
 
     .section-start {
         width: 100%;
         height: fit-content;
         aspect-ratio: unset;
+    }
+
+    .section-end {
+        flex-wrap: wrap;
+        margin-top: 2.25rem;
+        gap: 1.5rem;
     }
 
     /* #work-si-video,
@@ -358,15 +367,5 @@
     } */
     #work-si-video {
         aspect-ratio: 3/4;
-    }
-
-    .section-end {
-        flex-wrap: wrap;
-        margin-top: 2.25rem;
-        gap: 1.5rem;
-    }
-
-    .work-description {
-        margin-top: 2.25rem;
     }
 }
