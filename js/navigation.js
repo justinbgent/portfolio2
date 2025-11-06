@@ -65,3 +65,15 @@ window.addEventListener('hashchange', function () {
         }
     });
 });
+
+// Toggle mobile menu
+document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.getElementById('nav-menu-button');
+    const navigationItems = document.getElementById('navigation-items');
+
+    if (menuButton && navigationItems) {
+        menuButton.addEventListener('click', function () {
+            navigationItems.classList.toggle('menu-active');
+        });
+    }
+});

@@ -314,7 +314,7 @@
 
 @media (max-width: 890px) {
     #work-wrapper h1 {
-        line-height: 3.5rem;
+        /* line-height: 3.5rem; */
         margin-top: 4rem;
         margin-bottom: 2.25rem;
     }
