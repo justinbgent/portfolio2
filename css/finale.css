@@ -113,6 +113,15 @@
     color: rgba(0, 92, 183, 1);
 }
 
+#socials a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#socials a:hover {
+    text-decoration: none;
+}
+
 .finale-box-background {
     position: absolute;
     top: 0;

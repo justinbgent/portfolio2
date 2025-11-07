@@ -44,27 +44,30 @@ document.addEventListener('DOMContentLoaded', function () {
                     removeActiveClass();
                     correspondingLink.classList.add('active');
                 }
+                else if (sectionId === 'hero-wrapper') {
+                    removeActiveClass();
+                }
             }
         });
     }
 
     // Uncomment the line below if you want scroll-based active state
-    // window.addEventListener('scroll', updateActiveOnScroll);
+    window.addEventListener('scroll', updateActiveOnScroll);
 });
 
 // Alternative: Simple hash-based active state
 // This works if your navigation links use hash fragments (#about, #work, etc.)
-window.addEventListener('hashchange', function () {
-    const hash = window.location.hash;
-    const navLinks = document.querySelectorAll('#navigation-items a');
+// window.addEventListener('hashchange', function () {
+//     const hash = window.location.hash;
+//     const navLinks = document.querySelectorAll('#navigation-items a');
 
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === hash) {
-            link.classList.add('active');
-        }
-    });
-});
+//     navLinks.forEach(link => {
+//         link.classList.remove('active');
+//         if (link.getAttribute('href') === hash) {
+//             link.classList.add('active');
+//         }
+//     });
+// });
 
 // Toggle mobile menu
 document.addEventListener('DOMContentLoaded', function () {

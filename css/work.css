@@ -73,6 +73,15 @@
     align-self: center;
 }
 
+.mobile-store-buttons a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mobile-store-buttons a:hover {
+    text-decoration: none;
+}
+
 .mobile-store-buttons img {
     position: relative;
     width: auto;
