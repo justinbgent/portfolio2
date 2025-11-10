@@ -18,7 +18,7 @@
     object-fit: contain;
 }
 
-#gradient-overlay {
+/* #gradient-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,4 +30,16 @@
     mix-blend-mode: color-dodge;
     z-index: 300;
     pointer-events: none;
-}
+} */
+
+/*
+Change fonts:
+https://fonts.google.com/selection/embed
+https://fonts.google.com/selection?query=inter
+
+Fix spotlights/radial gradients. The above one
+
+https://squoosh.app/
+
+keep text to always two lines when expanding out. So max width or something.
+*/

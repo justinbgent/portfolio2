@@ -37,11 +37,23 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -97%);
+    transform: translate(-50%, -112%);
     width: 19rem;
     height: 19rem;
     margin: 0 auto;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(230, 230, 230, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    background: radial-gradient(50% 50% at 50% 50%,
+            rgba(215, 215, 215, 1) 0%,
+            rgba(215, 215, 215, 0.96) 10%,
+            rgba(215, 215, 215, 0.85) 20%,
+            rgba(215, 215, 215, 0.72) 30%,
+            rgba(215, 215, 215, 0.58) 40%,
+            rgba(215, 215, 215, 0.43) 50%,
+            rgba(215, 215, 215, 0.28) 60%,
+            rgba(215, 215, 215, 0.15) 70%,
+            rgba(215, 215, 215, 0.07) 80%,
+            rgba(215, 215, 215, 0.02) 90%,
+            rgba(0, 0, 0, 0) 100%);
+    filter: blur(30px);
     mix-blend-mode: color-dodge;
     pointer-events: none;
     z-index: 100;
@@ -119,7 +131,6 @@
     margin: 0;
     padding: 0;
     width: fit-content;
-    height: 6rem;
     display: flex;
     align-items: center;
 }
@@ -145,7 +156,7 @@
 }
 
 #hero-text p {
-    width: 20rem;
+    width: 21rem;
     height: 2rem;
     display: flex;
     align-items: center;
@@ -201,7 +212,7 @@
     } */
 
     #hero-bg-img {
-        top: -65rem;
+        top: -12rem;
         left: 50%;
         width: fit-content;
         height: fit-content;
@@ -209,12 +220,12 @@
     }
 
     #hero-bg-gradient-overlay {
-        top: -65rem;
+        top: -12rem;
         left: 50%;
         /* If two absolutes in the same container share the same top/left value
         they'll adjust with each other maintaining the same relative space as the
         container resizes. */
-        transform: translate(-50%, 384%);
+        transform: translate(-50%, 100%);
     }
 
     #hero-text {
@@ -231,7 +242,7 @@
 
     #hero-text p {
         width: 100%;
-        max-width: 20rem;
+        max-width: 21rem;
     }
 
     #midground-img-container {
