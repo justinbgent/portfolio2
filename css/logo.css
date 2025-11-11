@@ -18,19 +18,19 @@
     object-fit: contain;
 }
 
-/* #gradient-overlay {
+#gradient-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: auto;
     height: 100%;
     aspect-ratio: 1;
-    background: radial-gradient(50% 50% at 50% 50%, #717171 0%, rgba(0, 0, 0, 0) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, rgba(113, 113, 113, 1) 0%, rgba(0, 0, 0, 0) 100%);
     backdrop-filter: blur(2rem);
     mix-blend-mode: color-dodge;
     z-index: 300;
     pointer-events: none;
-} */
+}
 
 /*
 Change fonts:
@@ -41,5 +41,4 @@ Fix spotlights/radial gradients. The above one
 
 https://squoosh.app/
 
-keep text to always two lines when expanding out. So max width or something.
 */
