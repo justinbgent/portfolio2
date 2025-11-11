@@ -103,10 +103,6 @@
         margin: 7rem 0;
     }
 
-    #watch-img {
-        font-size: 14rem;
-    }
-
     #about-video-button-wrapper {
         width: calc(100% - 6rem);
         bottom: 2.5rem;
@@ -142,10 +138,10 @@
 
     #about-video {
         position: relative;
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
         aspect-ratio: 13/26;
-        object-fit: none;
+        object-fit: cover;
         overflow: hidden;
     }
 
@@ -153,15 +149,12 @@
         top: 4.875rem;
         width: 87.7%;
         transform: translate(-50%, 0%);
-        margin: 0;
-        font-size: 10rem;
     }
 
     #about-video-button-wrapper {
         flex-direction: column;
         width: calc(100vw - 3rem);
         gap: 2.5rem;
-        bottom: 4rem;
     }
 
     #about-video-button-wrapper p {
