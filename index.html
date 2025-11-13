@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <title>Justin Gent</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/pixel-blocks.css">
     <link rel="stylesheet" href="./css/base.css">
@@ -23,8 +21,11 @@
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/finale.css">
 
+    <!-- EmailJS SDK -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> -->
     <script src="./js/navigation.js"></script>
     <script src="./js/buttons.js"></script>
+    <!-- <script src="./js/contact.js"></script> -->
 </head>
 
 <body>
@@ -32,7 +33,6 @@
         <div id="navigation">
             <div id="logo">
                 <img id="logo-img" src="./assets/logo.svg" alt="Logo">
-                <div id="gradient-overlay"></div>
             </div>
             <div id="navigation-items">
                 <div id="nav-hideable-items">
@@ -42,7 +42,7 @@
                 </div>
                 <div id="nav-visible-items">
                     <div id="divider-nav"></div>
-                    <a id="hire-me-nav" href="#finale-wrapper">Hire Me</a>
+                    <a id="hire-me-nav" href="./assets/Resume.pdf">Hire Me</a>
                     <img id="nav-menu-button" src="./assets/sandwich_padded.svg" alt="Menu Button">
                 </div>
             </div>
@@ -63,6 +63,7 @@
             </div>
             <img id="hero-bg-img" src="./assets/hero_bg.webp" alt="Hero background">
             <div id="hero-bg-gradient-overlay"></div>
+            <div id="gradient-overlay"></div>
             <div id="hero-bg-gradient-overlay-top-left"></div>
             <div id="hero-bg-gradient-overlay-bottom"></div>
             <div id="pixel-blocks-margin-top"></div>
@@ -201,7 +202,7 @@
                     </div>
                 </div>
             </div>
-            <div id="about-video-wrapper">
+            <!-- <div id="about-video-wrapper">
                 <video id="about-video" src="./assets/SI-website-video-02.mp4" muted></video>
                 <img id="watch-img" src="./assets/Watch.svg" alt="Watch.">
                 <div id="about-video-button-wrapper" class="button-layout">
@@ -212,7 +213,7 @@
                         <img src="./assets/play_graphic.svg" alt="Play Button">
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div id="work-wrapper">
@@ -230,12 +231,14 @@
                     <div class="section-focus">
                         <div class="section-start">
                             <div id="work-video-wrapper">
-                                <video id="work-si-video" src="./assets/SI-website-video-02.mp4" muted></video>
+                                <video id="work-si-video" src="./assets/SI-website-video-02.mp4" muted autoplay="true"
+                                    loop></video>
                                 <p>In Development</p>
-                                <div id="watch-gameplay-button" class="button">
+                                <a id="watch-gameplay-button" class="button"
+                                    href="https://www.youtube.com/watch?v=bsVMCfSxPXY">
                                     <h4>Watch Gameplay</h4>
                                     <img src="./assets/play_graphic.svg" alt="Play Button">
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="section-end">
@@ -363,30 +366,30 @@
         <div id="contact-wrapper">
             <div id="contact-content">
                 <h1>Let's talk.</h1>
-                <h3><strong>I'm always on the hunt for a challenge,</strong> and I bring a whole toolkit of skills
-                    and a
-                    sugar-fueled passion for creating awesome digital experiences. If you've got a project that
-                    needs a
-                    developer who lives and breathes elegant code, consider my resume officially submitted. I'm
-                    ready to
-                    roll up my sleeves and build something incredible with you.</h3>
-                <div class="input-wrapper">
+                <h3>I'm always on the hunt for a challenge, <span>and I bring a whole toolkit of skills
+                        and a
+                        sugar-fueled passion for creating awesome digital experiences. If you've got a project that
+                        needs a
+                        developer who lives and breathes elegant code, consider my resume officially submitted. I'm
+                        ready to
+                        roll up my sleeves and build something incredible with you.</span></h3>
+                <!-- <div class="input-wrapper">
                     <img id="mail-icon" src="./assets/mail_no_bg.svg" alt="Mail Button">
                     <p id="email-input" contenteditable="true">Enter your email...</p>
                     <img id="right-arrow-icon" src="./assets/right_arrow.svg" alt="Right Arrow Button">
-                </div>
+                </div> -->
                 <div id="contact-bottom">
                     <p>I'm the kind of developer who gets excited about clean code and a well-commented function.
                     </p>
                     <div id="contact-buttons">
-                        <div id="get-in-touch-button" class="button">
+                        <a id="get-in-touch-button" class="button" href="mailto:justinbgent@gmail.com">
                             <h4>Get in Touch</h4>
                             <img src="./assets/mail_blue_bg.svg" alt="Mail Button">
-                        </div>
-                        <div id="resume-button" class="button">
+                        </a>
+                        <a id="resume-button" class="button" href="./assets/Resume.pdf">
                             <h4>View Resume</h4>
                             <img src="./assets/up_right_arrow.svg" alt="Up Right Arrow Button">
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

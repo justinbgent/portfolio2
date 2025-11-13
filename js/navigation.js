@@ -22,7 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
             if (this.getAttribute('href') === '#') {
                 e.preventDefault();
             }
-            setActiveLink(this);
+            if (this.getAttribute('href') !== './assets/Resume.pdf') {
+                setActiveLink(this);
+            }
         });
     });
 

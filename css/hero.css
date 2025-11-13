@@ -37,21 +37,20 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -112%);
-    width: 19rem;
-    height: 19rem;
-    margin: 0 auto;
+    transform: translate(-50%, -83%);
+    width: 37rem;
+    height: 37rem;
     background: radial-gradient(50% 50% at 50% 50%,
             rgba(215, 215, 215, 1) 0%,
-            rgba(215, 215, 215, 0.96) 10%,
-            rgba(215, 215, 215, 0.85) 20%,
-            rgba(215, 215, 215, 0.72) 30%,
-            rgba(215, 215, 215, 0.58) 40%,
-            rgba(215, 215, 215, 0.43) 50%,
-            rgba(215, 215, 215, 0.28) 60%,
-            rgba(215, 215, 215, 0.15) 70%,
-            rgba(215, 215, 215, 0.07) 80%,
-            rgba(215, 215, 215, 0.02) 90%,
+            rgba(215, 215, 215, 0.96) 5%,
+            rgba(215, 215, 215, 0.85) 10%,
+            rgba(215, 215, 215, 0.72) 15%,
+            rgba(215, 215, 215, 0.58) 20%,
+            rgba(215, 215, 215, 0.43) 25%,
+            rgba(215, 215, 215, 0.28) 30%,
+            rgba(215, 215, 215, 0.15) 35%,
+            rgba(215, 215, 215, 0.07) 40%,
+            rgba(215, 215, 215, 0.02) 45%,
             rgba(0, 0, 0, 0) 100%);
     filter: blur(2rem);
     mix-blend-mode: color-dodge;
@@ -59,15 +58,37 @@
     z-index: 100;
 }
 
+#gradient-overlay {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 6.5rem;
+    height: 6.5rem;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(113, 113, 113, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    mix-blend-mode: color-dodge;
+    z-index: 100;
+    pointer-events: none;
+}
+
 #hero-bg-gradient-overlay-top-left {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-100%, -100%);
-    width: 130rem;
-    height: 130rem;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(215, 215, 215, 1) 0%, rgba(0, 8, 14, 0) 100%);
-    filter: blur(2rem);
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    width: 145cqw;
+    height: 145cqw;
+    background: radial-gradient(50% 50% at 50% 50%,
+            rgba(230, 230, 230, 1) 0%,
+            rgba(200, 200, 200, 0.96) 5%,
+            rgba(200, 200, 200, 0.85) 10%,
+            rgba(200, 200, 200, 0.72) 15%,
+            rgba(200, 200, 200, 0.58) 20%,
+            rgba(200, 200, 200, 0.43) 25%,
+            rgba(200, 200, 200, 0.28) 30%,
+            rgba(200, 200, 200, 0.15) 35%,
+            rgba(200, 200, 200, 0.07) 40%,
+            rgba(200, 200, 200, 0.02) 45%,
+            rgba(0, 8, 14, 0) 100%);
     mix-blend-mode: color-dodge;
     pointer-events: none;
     z-index: 100;
@@ -227,7 +248,7 @@
         /* If two absolutes in the same container share the same top/left value
         they'll adjust with each other maintaining the same relative space as the
         container resizes. */
-        transform: translate(-50%, 100%);
+        transform: translate(-50%, 28%);
     }
 
     #hero-text {

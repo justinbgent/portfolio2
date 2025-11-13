@@ -114,6 +114,7 @@ p {
     border-radius: 48px;
     cursor: pointer;
     z-index: 400;
+    text-decoration: none;
 }
 
 .button h4 {

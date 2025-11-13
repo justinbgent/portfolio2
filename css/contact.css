@@ -23,7 +23,12 @@
 
 #contact-content h3 {
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    /*margin gone while input-wrapper class isn't used in html*/
+    /* margin-bottom: 4rem; */
+}
+
+#contact-content h3 span {
+    color: rgba(255, 255, 255, 0.56);
 }
 
 #contact-bottom {

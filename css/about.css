@@ -28,7 +28,9 @@
 #about-content-button-wrapper {
     width: 100%;
     height: fit-content;
-    margin: 10rem 0;
+    /*Used when demo-reel is visible*/
+    /* margin: 10rem 0; */
+    margin-top: 4rem;
 }
 
 #about-content-button-wrapper .button {
@@ -36,13 +38,18 @@
 }
 
 #about-content-button-wrapper p {
-    width: 22.5rem;
+    width: 100%;
     height: fit-content;
+    max-width: 30rem;
     margin: auto 0;
     color: rgba(0, 0, 0, 0.56);
 }
 
-#about-video-wrapper {
+#view-my-work-button {
+    display: none;
+}
+
+/* #about-video-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -84,7 +91,7 @@
 
 #about-video-button-wrapper p {
     color: rgba(255, 255, 255, 0.56);
-}
+} */
 
 /* Tablet */
 @media (max-width: 991px) {
@@ -100,13 +107,15 @@
     #about-content-button-wrapper {
         width: 100%;
         height: fit-content;
-        margin: 7rem 0;
+        /*Used when demo-reel is visible*/
+        /* margin: 7rem 0; */
+        margin-top: 4rem;
     }
 
-    #about-video-button-wrapper {
+    /* #about-video-button-wrapper {
         width: calc(100% - 6rem);
         bottom: 2.5rem;
-    }
+    } */
 }
 
 /* Mobile (May actually want this a bit smaller in width) */
@@ -123,12 +132,14 @@
     #about-content-button-wrapper {
         width: 100%;
         height: fit-content;
-        margin: 4rem 0;
+        /*Used when demo-reel is visible*/
+        /* margin: 4rem 0; */
+        margin-top: 2.25rem;
         flex-direction: column;
         gap: 2.5rem;
     }
 
-    #about-video-wrapper {
+    /* #about-video-wrapper {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -160,5 +171,5 @@
     #about-video-button-wrapper p {
         width: 100%;
         text-align: center;
-    }
+    } */
 }
