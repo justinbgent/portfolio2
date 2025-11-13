@@ -1,6 +1,8 @@
 // Navigation Active State Management
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('#navigation-items a');
+    const menuButton = document.getElementById('nav-menu-button');
+    const navigationItems = document.getElementById('navigation-items');
 
     // Function to remove active class from all links
     function removeActiveClass() {
@@ -24,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             if (this.getAttribute('href') !== './assets/Resume.pdf') {
                 setActiveLink(this);
+            }
+            if (navigationItems.classList.contains('menu-active')) {
+                navigationItems.classList.remove('menu-active');
             }
         });
     });
@@ -55,6 +60,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Uncomment the line below if you want scroll-based active state
     window.addEventListener('scroll', updateActiveOnScroll);
+
+    // Toggle mobile menu
+    if (menuButton && navigationItems) {
+        menuButton.addEventListener('click', function () {
+            navigationItems.classList.toggle('menu-active');
+        });
+    }
 });
 
 // Alternative: Simple hash-based active state
@@ -70,15 +82,3 @@ document.addEventListener('DOMContentLoaded', function () {
 //         }
 //     });
 // });
-
-// Toggle mobile menu
-document.addEventListener('DOMContentLoaded', function () {
-    const menuButton = document.getElementById('nav-menu-button');
-    const navigationItems = document.getElementById('navigation-items');
-
-    if (menuButton && navigationItems) {
-        menuButton.addEventListener('click', function () {
-            navigationItems.classList.toggle('menu-active');
-        });
-    }
-});
