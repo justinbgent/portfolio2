@@ -1,0 +1,299 @@
+#hero-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    /* height: 83rem; */
+    /* max-height: calc(48rem + 35vw); */
+    background-color: rgba(0, 8, 16, 1);
+    overflow: hidden;
+    z-index: 100;
+}
+
+#hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#hero-bg-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    mix-blend-mode: color-dodge;
+    object-fit: cover;
+    z-index: 100;
+}
+
+#hero-bg-gradient-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -83%);
+    width: 37rem;
+    height: 37rem;
+    background: radial-gradient(50% 50% at 50% 50%,
+            rgba(215, 215, 215, 1) 0%,
+            rgba(215, 215, 215, 0.96) 5%,
+            rgba(215, 215, 215, 0.85) 10%,
+            rgba(215, 215, 215, 0.72) 15%,
+            rgba(215, 215, 215, 0.58) 20%,
+            rgba(215, 215, 215, 0.43) 25%,
+            rgba(215, 215, 215, 0.28) 30%,
+            rgba(215, 215, 215, 0.15) 35%,
+            rgba(215, 215, 215, 0.07) 40%,
+            rgba(215, 215, 215, 0.02) 45%,
+            rgba(0, 0, 0, 0) 100%);
+    filter: blur(2rem);
+    mix-blend-mode: color-dodge;
+    pointer-events: none;
+    z-index: 100;
+}
+
+#gradient-overlay {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 6.5rem;
+    height: 6.5rem;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(113, 113, 113, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    mix-blend-mode: color-dodge;
+    z-index: 100;
+    pointer-events: none;
+}
+
+#hero-bg-gradient-overlay-top-left {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    width: 145cqw;
+    height: 145cqw;
+    background: radial-gradient(50% 50% at 50% 50%,
+            rgba(230, 230, 230, 1) 0%,
+            rgba(200, 200, 200, 0.96) 5%,
+            rgba(200, 200, 200, 0.85) 10%,
+            rgba(200, 200, 200, 0.72) 15%,
+            rgba(200, 200, 200, 0.58) 20%,
+            rgba(200, 200, 200, 0.43) 25%,
+            rgba(200, 200, 200, 0.28) 30%,
+            rgba(200, 200, 200, 0.15) 35%,
+            rgba(200, 200, 200, 0.07) 40%,
+            rgba(200, 200, 200, 0.02) 45%,
+            rgba(0, 8, 14, 0) 100%);
+    mix-blend-mode: color-dodge;
+    pointer-events: none;
+    z-index: 100;
+}
+
+/* #hero-bg-gradient-overlay-bottom {
+    position: absolute;
+    left: -45.14%;
+    right: 0.42%;
+    top: 12.42%;
+    bottom: -70.3%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(233, 233, 233, 0.64) 0%, rgba(0, 8, 14, 0) 100%);
+    mix-blend-mode: color-dodge;
+    pointer-events: none;
+    z-index: 100;
+} */
+
+#midground-img-container {
+    position: absolute;
+    top: 10rem;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100% - 10rem);
+    z-index: 200;
+}
+
+#union-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 72%;
+    object-fit: contain;
+    transform: translate(-34%, 0);
+    z-index: 200;
+}
+
+#portrait-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 80%;
+    object-fit: contain;
+    transform: translate(38%, 0);
+    z-index: 300;
+}
+
+#hero-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: fit-content;
+    margin-left: 4rem;
+    margin-right: auto;
+    margin-top: 10rem;
+    z-index: 400;
+}
+
+#hero-text h1 {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+#hero-text h3 {
+    width: 97%;
+    height: fit-content;
+    max-width: 40rem;
+    display: flex;
+    align-items: center;
+    margin: 4rem 0;
+    padding: 0;
+}
+
+#divider-hero {
+    position: relative;
+    width: 5rem;
+    height: 0.125rem;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 92, 183, 1);
+    flex-shrink: 0;
+}
+
+#hero-text p {
+    width: 21rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    padding: 0;
+    color: rgba(99, 108, 118, 1);
+}
+
+#pixel-blocks-margin-top {
+    position: relative;
+    width: 100%;
+    --potential-height: calc(10rem + (100vw - 991px));
+    height: clamp(10rem, var(--potential-height), 20rem);
+}
+
+/* #hero-wrapper .pixel-blocks {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+} */
+
+/* Tablet */
+@media (max-width: 991px) {
+    #hero-wrapper {
+        min-height: unset;
+        max-height: unset;
+        aspect-ratio: unset;
+        height: fit-content;
+    }
+
+    #hero-text {
+        margin-left: 3rem;
+        width: 45%;
+    }
+
+    #hero-text p {
+        /* width: 20rem; */
+        margin-bottom: 3rem;
+    }
+
+    #hero-text h3 {
+        /* width: 20rem; */
+        margin: 3rem 0;
+    }
+}
+
+/* Mobile (May actually want this a bit smaller in width) */
+@media (max-width: 890px) {
+    /* #hero-wrapper {
+        aspect-ratio: unset;
+        height: fit-content;
+    } */
+
+    #hero-bg-img {
+        top: -12rem;
+        left: 50%;
+        width: fit-content;
+        height: fit-content;
+        transform: translate(-50%, 0%);
+    }
+
+    #hero-bg-gradient-overlay {
+        top: -12rem;
+        left: 50%;
+        /* If two absolutes in the same container share the same top/left value
+        they'll adjust with each other maintaining the same relative space as the
+        container resizes. */
+        transform: translate(-50%, 28%);
+    }
+
+    #hero-text {
+        /* margin: 0 1.5rem; */
+        width: calc(100% - 3rem);
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    #hero-text h3 {
+        width: 100%;
+        margin: 3rem 0;
+    }
+
+    #hero-text p {
+        width: 100%;
+        max-width: 21rem;
+    }
+
+    #midground-img-container {
+        position: relative;
+        top: unset;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 13/14;
+        background-color: rgba(245, 245, 245, 1);
+    }
+
+    #union-img {
+        top: 2.25rem;
+        height: 100%;
+        transform: translateX(-40%);
+        filter: brightness(0);
+    }
+
+    #portrait-img {
+        top: 2.25rem;
+        height: 100%;
+        transform: translateX(32%);
+    }
+
+    /* #hero-text h3 {
+        margin: 3rem 0;
+    } */
+
+    /* #hero-wrapper .pixel-blocks {
+    } */
+}

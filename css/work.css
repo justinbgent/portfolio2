@@ -1,0 +1,395 @@
+#work-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(245, 245, 245, 1);
+    overflow: hidden;
+}
+
+#work-wrapper h1 {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    color: rgba(0, 8, 16, 1);
+}
+
+#work-wrapper h3 {
+    color: rgba(0, 8, 16, 1);
+}
+
+#work-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    overflow: hidden;
+}
+
+#work-content-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10rem;
+}
+
+#work-divider {
+    position: relative;
+    width: calc(100% + 4rem);
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.work-section {
+    position: relative;
+    display: grid;
+    grid-template-rows: min-content 4rem max-content 4rem 0rem 0rem max-content;
+    grid-template-columns: 1fr calc(26% + 4rem);
+    width: 100%;
+    height: fit-content;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.work-section h2 {
+    position: relative;
+    grid-row: 1;
+    grid-column: 1 / 2;
+    width: max-content;
+    height: fit-content;
+    align-items: center;
+    color: rgba(0, 8, 16, 1);
+}
+
+.mobile-store-buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    grid-row: 1;
+    grid-column: 2 / 3;
+    gap: 1rem;
+    align-self: center;
+}
+
+.mobile-store-buttons a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mobile-store-buttons a:hover {
+    text-decoration: none;
+}
+
+.mobile-store-buttons img {
+    position: relative;
+    width: auto;
+    height: 3rem;
+    object-fit: fill;
+}
+
+#steam-button {
+    position: relative;
+    width: auto;
+    height: 3rem;
+    grid-row: 1;
+    grid-column: 2 / 3;
+    /* justify-self: end; */
+    align-self: center;
+}
+
+.work-description {
+    grid-row: 7;
+    grid-column: 1 / 3;
+    position: relative;
+    width: 80%;
+    height: fit-content;
+    justify-self: end;
+}
+
+.section-focus {
+    position: relative;
+    width: 100%;
+    height: auto;
+    grid-row: 3;
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-start {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(70% - 4rem);
+    height: auto;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.section-end {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(26% + 4rem);
+    height: fit-content;
+    margin-left: 4%;
+}
+
+.section-end p {
+    margin-bottom: 2rem;
+}
+
+.role,
+.tooling,
+.platforms {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: fit-content;
+}
+
+#work-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+}
+
+#work-si-video {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: black;
+}
+
+#work-video-wrapper p,
+#rekor-display p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+}
+
+#fallnfly-display p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.4);
+    /* backdrop-filter: blur(12px); */
+}
+
+/* #fallnfly-display .button, */
+#work-video-wrapper .button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.work-img-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    display: flex;
+    overflow: hidden;
+}
+
+#fallnfly-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+#rekor-display {
+    background-color: rgba(0, 27, 37, 1);
+}
+
+#rekor-display img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48.4%;
+    height: auto;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    #work-wrapper h1 {
+        margin-top: 6.5rem;
+    }
+
+    #work-content {
+        padding: 0 3rem;
+    }
+
+    #work-divider {
+        width: calc(100% + 3rem);
+    }
+
+    #work-content-header {
+        margin-bottom: 6.5rem;
+    }
+
+    .work-section {
+        margin-top: 6.5rem;
+        margin-bottom: 6.5rem;
+    }
+
+    .mobile-store-buttons,
+    #steam-button {
+        justify-self: end;
+    }
+
+    .section-focus {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .section-start {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+    }
+
+    .section-end {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+        gap: 2rem;
+    }
+
+    .role,
+    .tooling,
+    .platforms {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .role p,
+    .tooling p,
+    .platforms p {
+        margin-bottom: 0;
+    }
+
+    .work-description {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 890px) {
+    #work-wrapper h1 {
+        /* line-height: 3.5rem; */
+        margin-top: 4rem;
+        margin-bottom: 2.25rem;
+    }
+
+    #work-content {
+        padding: 0 1.5rem;
+    }
+
+    #work-divider {
+        width: calc(100% + 1.5rem);
+    }
+
+    #work-content-header {
+        margin-bottom: 4rem;
+    }
+
+    .work-section {
+        grid-template-rows: min-content 2.25rem max-content 2.25rem min-content 2.25rem max-content;
+        grid-template-columns: 1fr;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .mobile-store-buttons,
+    #steam-button {
+        grid-row: 5;
+        grid-column: 1 / 2;
+        justify-self: start;
+    }
+
+    .section-focus,
+    .work-description {
+        grid-column: 1;
+    }
+
+    .section-start {
+        width: 100%;
+        height: fit-content;
+        aspect-ratio: unset;
+    }
+
+    .section-end {
+        flex-wrap: wrap;
+        margin-top: 2.25rem;
+        gap: 1.5rem;
+    }
+
+    /* #work-si-video,
+    #fallnfly-img,
+    #rekor-display img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3/4;
+    } */
+    #work-si-video {
+        aspect-ratio: 3/4;
+    }
+}

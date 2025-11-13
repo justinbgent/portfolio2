@@ -1,0 +1,35 @@
+#logo {
+    position: relative;
+    display: flex;
+    width: auto;
+    height: 100%;
+    aspect-ratio: 7/4;
+    z-index: 1;
+}
+
+#logo-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    z-index: 2;
+    background-color: transparent;
+    object-fit: contain;
+}
+
+/*
+Hire Me button can be hidden or take someone to a calendly link or something to get a hold of me.
+Contact section can take full responsibility for contacting me if I'd like.
+
+Astrodawn video can autoplay and the watch gameplay button can take you to the gameplay youtube video.
+
+Animate pixel blocks growing into size.
+
+Change fonts:
+https://fonts.google.com/selection/embed
+https://fonts.google.com/selection?query=inter
+
+https://squoosh.app/
+
+*/
