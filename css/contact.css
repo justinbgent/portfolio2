@@ -23,8 +23,8 @@
 
 #contact-content h3 {
     margin-top: 4rem;
-    /*margin gone while input-wrapper class isn't used in html*/
-    /* margin-bottom: 4rem; */
+    /*margin gone while input-wrapper class is invisible*/
+    margin-bottom: 4rem;
 }
 
 #contact-content h3 span {
