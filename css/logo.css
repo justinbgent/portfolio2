@@ -18,7 +18,7 @@
     object-fit: contain;
 }
 
-#gradient-overlay {
+/* #gradient-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,14 +30,19 @@
     mix-blend-mode: color-dodge;
     z-index: 300;
     pointer-events: none;
-}
+} */
 
 /*
+Hire Me button can be hidden or take someone to a calendly link or something to get a hold of me.
+Contact section can take full responsibility for contacting me if I'd like.
+
+Astrodawn video can autoplay and the watch gameplay button can take you to the gameplay youtube video.
+
+Animate pixel blocks growing into size.
+
 Change fonts:
 https://fonts.google.com/selection/embed
 https://fonts.google.com/selection?query=inter
-
-Fix spotlights/radial gradients. The above one
 
 https://squoosh.app/
 
